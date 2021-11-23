@@ -32,6 +32,9 @@ bool NumberOfParentheses(std::string introduced_sentence) {
     }
     if (introduced_sentence.at(contador) == ')') {
       close = close - 1;
+      if (close <= -1) {
+        return close;
+      }
     }
   }
   return close;
