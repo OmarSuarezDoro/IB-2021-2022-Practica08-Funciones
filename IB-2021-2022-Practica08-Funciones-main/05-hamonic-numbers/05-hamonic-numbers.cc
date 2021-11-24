@@ -23,7 +23,7 @@ double CalculateHarmonicNumber(int introduced_number) {
   double harmonic_number{0};
   double division_of_counter;
   for (double counter = 1; counter <= introduced_number; ++counter) {
-    division_of_counter = (1/counter);
+    division_of_counter = (1 / counter);
     harmonic_number = harmonic_number + division_of_counter;
   }
   return harmonic_number;
