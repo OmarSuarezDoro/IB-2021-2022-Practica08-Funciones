@@ -15,7 +15,6 @@
 #include <iostream>
 #include <iomanip>
 
-
 void MensajeInicial() {
   std::cout << "This program calculate the diference between two harmonic numbers." << std::endl << std::endl;
 }
@@ -29,12 +28,11 @@ double CalculateHarmonicNumber(const int first_number_introduced, const int seco
   return harmonic_number;
 }
 
-
 int main() {
   double first_number_introduced, second_number_introduced;
   double harmonic_first_number, harmonic_second_number;
   while (std::cin >> first_number_introduced >> second_number_introduced) {
-    std::cout << std::fixed << std::setprecision(10) << CalculateHarmonicNumber(first_number_introduced, second_number_introduced)<< std::endl;
+    std::cout << std::fixed << std::setprecision(10) << CalculateHarmonicNumber(first_number_introduced, second_number_introduced) << std::endl;
   }
   return 0;
 }
