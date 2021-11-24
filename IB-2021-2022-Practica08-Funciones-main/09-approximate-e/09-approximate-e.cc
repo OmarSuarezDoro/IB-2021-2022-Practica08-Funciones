@@ -27,7 +27,7 @@ double CalculateFactorial(double counter) {
   return factorial;
 }
 // @brief This function calculate the approximation of the number e.
-double CalculateEulerNumber(const double number_introduced){
+double CalculateEulerNumber(double number_introduced) {
   double euler_number{1.00};
   for (double counter = 1.00; counter < number_introduced; ++counter) {  
     euler_number = euler_number + (1.00 / (CalculateFactorial(counter)));
@@ -42,10 +42,10 @@ int main() {
     if (number_introduced == 0) {
       std::cout << "With " << std::setprecision(0) << number_introduced << " term(s) we get ";
       std::cout << std::fixed << std::setprecision(10) << 0.0000000000 << "." << std::endl;
-    } else if(number_introduced == 1) {
+    } else if (number_introduced == 1) {
       std::cout << "With " << std::setprecision(0) << number_introduced << " term(s) we get ";
       std::cout << std::fixed << std::setprecision(10) << 1.0000000000 << "." << std::endl;
-    } else  {
+    } else {
       std::cout << "With " << std::setprecision(0) << number_introduced << " term(s) we get ";
       std::cout << std::fixed << std::setprecision(10) << CalculateEulerNumber(number_introduced) << "." << std::endl;    
     }
