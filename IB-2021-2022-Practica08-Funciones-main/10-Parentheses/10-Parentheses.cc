@@ -42,7 +42,7 @@ bool NumberOfParentheses(std::string introduced_sentence) {
 
 int main() {
   std::string introduced_sentence;
-  std::getline(std::cin, introduced_sentence);
+  getline(std::cin, introduced_sentence);
   bool close{false};
   close = NumberOfParentheses(introduced_sentence);
   if (close == 0) {
