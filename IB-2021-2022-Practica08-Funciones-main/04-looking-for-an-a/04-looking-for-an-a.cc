@@ -19,7 +19,7 @@ void MensajeInicial() {
   std::cout << "This program search the character a in a sentence introduced by user." << std::endl << std::endl;
 }
 //This function search in the string the character a.
-bool BuscarA(std::string introduced_sentence) {
+bool SearchA(std::string introduced_sentence) {
   bool result{0};
   for (int counter = 0; counter < introduced_sentence.length(); ++counter) {
     if (introduced_sentence.at(counter) == 'a') {
@@ -36,7 +36,7 @@ int main() {
   bool result{0};
   int sentence_length;
   sentence_length = introduced_sentence.length();
-  result = BuscarA(introduced_sentence);
+  result = SearchA(introduced_sentence);
   if (result == 1) {
     std::cout << "yes" << std::endl;
   } else {
